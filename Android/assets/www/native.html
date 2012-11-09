@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<!--
+Alex Behannon
+11/08/2012
+AVF 1211
+-->
+
+<html class="ie ie7" lang="en">
+<html class="ie ie8" lang="en">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<title>AVF App - Native Tests</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- Scripts -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/selectnav.js"></script>
+		<script src="js/cordova-2.1.0.js"></script>
+		
+	</head>
+	
+	<body>
+		<!-- Nav -->
+		<div id="wrapper">
+			
+			<div class="container ie-dropdown-fix">
+				
+				<div class="sixteen columns">
+					
+					<div class="">
+						Alex Behannon / 
+						AVF 1211 / 
+						Week 3 / 
+						The App With No Name
+					</div>
+					
+					<div id="navigation">
+						
+						<ul id="nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="discussions.html">Discussions</a></li>
+						</ul>
+						
+					</div> 
+					<div class="clear"></div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<!-- Content -->
+		<div class="container">
+			
+			<div class="sixteen columns">
+				
+				<div id="page-title">
+					<h2>Native Mobile Device Tests</span></h2>
+					<br>
+					<div class="clear"></div>
+					<div id="bolded-line"></div>
+				</div>
+				
+			</div>
+			
+			<div class="four columns">
+				<div>
+					<a href="#" onCLick="initGeolocation();" class="button color medium">Geolocation Test</a>
+					<p>Click to give grab a simple breakdown of coordinates.</p>
+					<p>Android and iOS compatible.</p>
+				</div>
+			</div>
+			
+			<div class="four columns">
+				<div>
+					<a href="#" onCLick="contactInit();" class="button color medium">Contacts Test</a>
+					<p>Click to give a quick count of how many contacts exist on the device.</p>
+					<p>Android and iOS compatible.</p>
+				</div>
+			</div>
+			
+			<div class="four columns">
+				<div>
+					<a href="#" onClick="prompt('What is the average airspeed velocity of an unladen swallow?')" class="button color medium">Notification Test</a>
+					<p>Click to give a simple popup/prompt.</p>
+					<p>Android and iOS compatible.</p>
+				</div>
+			</div>
+			
+			<div class="four columns">
+				<div>
+					<a href="#" onCLick="takePicture();" class="button color medium">Camera Test</a>
+					<p>Click to open up your device's camera.</p>
+					<p>Android and iOS compatible.</p>
+				</div>
+			</div>
+			
+			<div class="sixteen columns">
+				
+				<div id="page-title">
+					
+					<h2>Accelerometer Test</span></h2>
+					<br>
+					<div class="clear"></div>
+					<div id="bolded-line"></div>
+					
+				</div>
+				
+				<ul> Device Acceleration
+					<li>X: <span id=accelX></span></li>
+					<li>Y: <span id=accelY></span></li>
+					<li>Z: <span id=accelZ></span></li>
+				</ul>
+				
+			</div>
+			
+			<div class="blankspace homelong">
+				
+			</div>
+			
+			
+		</div>
+		
+		<!-- Footer -->
+		<div id="footer">
+			
+			<div class="container">
+				
+				<!-- Jump -->
+				<div class="sixteen columns">
+					<div id="footer-bottom">
+						<div id="scroll-top-top"><a href="#"></a></div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+	
+</html>
