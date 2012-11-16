@@ -12,7 +12,7 @@ AVF 1211
 	<head>
 		
 		<meta charset="utf-8">
-		<title>AVF App - Home</title>
+		<title>AVF App - Discussions</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
@@ -29,24 +29,33 @@ AVF 1211
 	
 	<body>
 		<!-- Nav -->
-		<div id="wrapper">
+		<div id="mainbox">
 			
 			<div class="container ie-dropdown-fix">
 				
-				<div class="sixteen columns">
+				<!-- Header -->
+				<div id="header">
 					
-					<div class="">
-						Alex Behannon / 
-						AVF 1211 / 
-						Week 3 / 
-						The App With No Name
+					<div class="eight columns">
+						
+						<div id="logo">
+							
+							<img src="img/logo.png" alt="logo" />
+							
+						</div>
+						
 					</div>
+				</div>
+				
+				<!-- Nav -->	
+				<div class="sixteen columns">
 					
 					<div id="navigation">
 						
 						<ul id="nav">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="discussions.html">Discussions</a></li>
+							<li><a href="videotest.html">Video Test</a></li>
 						</ul>
 						
 					</div> 
@@ -56,107 +65,166 @@ AVF 1211
 				
 			</div>
 			
-		</div>
-		
+			
 		<!-- Content -->
-		<div class="container">
-			
-			<div class="sixteen columns">
-			
-				<div id="page-title">
-					<h2>Discussion Topic 1 - Industry Research, Project Intent</span></h2>
-					<br>
-					<div class="clear"></div>
-					<div id="bolded-line"></div>
-				</div>
-			
-				<div>
-					<ul>
-						<li>What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only?</li>
-						<br>
-						<li>For the particular app I am looking to go with, most of the things I am looking to go with should work with html, css, or js. I am particular looking for geolocation, the accelerometer, notifications, camera use, and use of the contacts.</li>
-					</ul>
-				    
-					<br><br>
-					
-					<ul>
-						<li>What types of features do you think will pair well together in an app?</li>
-						<br>
-						<li>I think this really just depends on what you are trying to do. For example, I think geolocation and the camera go pretty well together. There are already other apps out there that show as such, giving you the ability to take a picture and mark where you took it.</li>
-					</ul>
-					
-					<br><br>
-					
-					<ul>
-						<li>Please describe any design and functionality intentions you may have for your Demo app components this month.</li>
-						<br>
-						<li>I would like to be able to use the map, geolocation to maybe mark areas of note down within the app for the user to keep information/tabs on. Working more into that, if possible what I'd really like to do is tie pictures to that, as well. Being able to use the camera, mark where it was taken or maybe being able to go to the picture, then use that picture as a store for GPS markers. We'll see what we can do, though.</li>
-					</ul>
-					<br><br>
-				</div>
+			<div class="container">
 				
-			</div>
+				<div class="sixteen columns">
+				
+					<div id="page-title">
+						<h2>Discussion Topic 1 - Industry Research, Project Intent</span></h2>
+						<div class="clear"></div>
+						<div id="bolded-line"></div>
+					</div>
+				
+					<div>
+						<ul>
+							<p><h3>What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only?</h3></p>
+							
+							<p>For the particular app I am looking to go with, most of the things I am looking to go with should work with html, css, or js. I am particular looking for geolocation, the accelerometer, notifications, camera use, and use of the contacts.</p>
+						</ul>
+					    
+						
+						<ul>
+							<p><h3>What types of features do you think will pair well together in an app?</h3></p>
+							
+							<p>I think this really just depends on what you are trying to do. For example, I think geolocation and the camera go pretty well together. There are already other apps out there that show as such, giving you the ability to take a picture and mark where you took it.</p>
+						</ul>
+						
+						
+						<ul>
+							<p><h3>Please describe any design and functionality intentions you may have for your Demo app components this month.</h3></p>
+							
+							<p>I would like to be able to use the map, geolocation to maybe mark areas of note down within the app for the user to keep information/tabs on. Working more into that, if possible what I'd really like to do is tie pictures to that, as well. Being able to use the camera, mark where it was taken or maybe being able to go to the picture, then use that picture as a store for GPS markers. We'll see what we can do, though.</p>
+						</ul>
+						
+					</div>
+					
+				</div>
+			
+				
+				<div class="sixteen columns">
+				
+					<div id="page-title">
+						<h2>Discussion Topic 2 - Accessibility</span></h2>
+						
+						<div class="clear"></div>
+						<div id="bolded-line"></div>
+					</div>
+				
+					<div>
+						<ul>
+							<p><h3>What are some of the ways that you could change your HTML on your Demo app to be more accessible?</h3></p>
+							
+							<p>As I started writing this, I briefly looked over my app, and realized the answer to this question was pretty much blatant: just about everything. I immediately noted that I really didnt properly section off parts of my main page. While I used header tags to separate things, I could actually section off the header tags and their following items. I originally had javascript hidden/click to show menus, but now I am a bit glad I worked around that instead.</p>
+						</ul>
+					    
+						
+						<ul>
+							<p><h3>Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?</h3></p>
+							
+							<p>The most common issues I am seeing amongst videos talking about these screen readers is misused tags, linked words in the middle of paragraphs, really long link URIs, and javascript causing issues with web accessibility. URIs are something that should at least be pretty simple to do. 
+							
+							Shorting a URI will make surfing easier and quicker for accessibilty users, and is something I usually do whenever I can on my own pages anyways. 
+							
+							Navigation bars are a big thing, too. While javascript and fancy navbars look nice, a clearly visible and simple navbar does the trick just as well. A small, simple navbar at the top of a page would allow for most readers to pick up on the links immediately. These links can be used at the top to simply get to places where needed, and if you want a large scripted CTI in the center for your visually-based users, well there ya go.</p>
+						
+						</ul>
+						
+						
+						<ul>
+							<p><h3>Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.</h3></p>
+							
+							<p>iPhone/iPad/iOS devices - This should be a given, but I'll go with it anyways since the average person who never has need for these features may or may not notice they are available! I assist users with accibility issues all the time at my office, and one of the things we do for those users is enable it if they want to use it, as well as giving them a walkthrough of the features available. Major things of note is that you can actually change the devices' touch and tracking speeds/sensitivty and even create custom gestures for those that have issues with difficulty using/touching the screen. For visual impaired you can use larger texts, pretty decent voice overs and auto-text/auto-correct via voice.</p>
+							
+							<p>Kindle - This is another nice example. The Amazon Kindle actually has visually impaired accessibility functions. You can have the device display larger fonts so that it makes reading easier, or even have the device read out text to speech.</p>
+						</ul>
+						
+						
+						<ul>
+							<p><h3>Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.</h3></p>
+							
+							<p>Color ID - This is an app that uses a device's camera to tell what the color of something is. To more advanced users, it can also give out hex color tags, or even goes "simple" mode to find the basic colors.</p>
+							
+							<p>SayText - This app is used to read the text of whatever the device's camera sees. The user holds the camera to the image, and presses the screen, and the device will focus and read off whatever text it sees.</p>
+						</ul>
+						
+						
+						
+					</div>
+					
+				</div>
 		
-			
-			<div class="sixteen columns">
-			
-				<div id="page-title">
-					<h2>Discussion Topic 2 - Accessibility</span></h2>
-					<br>
-					<div class="clear"></div>
-					<div id="bolded-line"></div>
+				<div class="sixteen columns">
+				
+					<div id="page-title">
+						<h2>Discussion Topic 3 - Market Research/span></h2>
+						
+						<div class="clear"></div>
+						<div id="bolded-line"></div>
+					</div>
+				
+					<div>
+						<ul>
+							<p><h3>What are the 'top selling' app categories in the U.S.?</h3></p>
+							
+							<p>It appears that the majority of top selling mobile apps are games, with what I guess you could call entertainment/fun apps at a close second.</p>
+						</ul>
+						
+						
+						<ul>
+							<p><h3>What are the 'top selling' app categories in Japan?</h3></p>
+							
+							<p>As with the US sales, gaming applications really are the majority of sales.</p>
+						</ul>
+						
+						
+						<ul>
+							<p><h3>What are the 'top selling' app categories in Great Britain?</h3></p>
+							
+							<p>Same as the other two countries, gaming apps are the most frequent in the top sales. There is at least one slightly useful app (a media player) which is nice to see, but thats about it.</p>
+						</ul>
+						
+						
+						<ul>
+							<p><h3>Based on your three answers above, what might you infer about each of the markets listed?</h3></p>
+							
+							<p>While I am not really shocked here, as I know I know I pretty much use my phone for the same thing, most people buying aplications are going for things that amuse them. There are a few infrequent top apps that are actually useful, but they are most definitely crowded out by both games and "fun" apps that don't really serve a useful purpose other than to waste time.</p>
+						</ul>
+						
+						
+						<ul>
+							<p><h3>What percentage of Android users have the latest/greatest OS in the U.S? in Japan? in Great Britain? How might these differences impact development?</h3></p>
+							
+							<p>Android fragmentation has always been an issue, it seems. Its the one reason I personally swapped back to an iOS device. While I could not find absolute percentages for individual countries, as a whole it seems that the majority of Android users are still at least two major sequence changes behind (2.3 where the latest is 4.1). While android device APIs are forward compatible, meaning that most OS changes are simply adding APIs rather than removing them, or at least streamlining them, the average application isn't going to be backwards compatible. Calling APIs on a version of Android that doesn't recognize what the application is requesting isn't exactly going to get anything done. Android developers tend to chose a minimum version of the OS to build from and go from there.</p>
+						</ul>
+						
+						
+						<ul>
+							<p><h3>What is the average cost and bandwidth limits per user (in general) in each of the three markets? How may this impact development?</h3></p>
+							
+							<p>Honestly, I personally don't feel this extremely impacts a user by country, but rather by service provider. Mobile data coverage used to be part of a previous line of work for me, and the big kicker is always who you choose to put your plan under. While prices vary a bit, from a business perspective when it came to data plans it was down to what part of the country the user was going to be in the most, not the cost. If a user wants a data plan, they are going to pay for it regardless, and use it up all the same.</p>
+						</ul>
+						
+						
+						<ul>
+							<p><h3>And, finally, what would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.</h3></p>
+							
+							<p>Personally? I'd go with the universally top selling choice of making a game, because its something that I would want to invest my time and money in. Be it a paid or free/advertising ran game, as long as it is unique and entertaining enough to get people to invest even a single dollar into, its a winner in my book. The key there is making something truly unique. There are so many games out there, for both desktop machines and mobile devices, and not very many of them seriously stick out. The majority of games being created are remakes, sequels, and sequels of sequels (heres looking at you sports games and Call of Duty...).</p>
+							
+							<p>If making a game isn't something that would be feasible, there is always the option of going for something useful. Much like any other application choice, you want it to be unique, but with the added factor of actually being useful. If it can't be completely unique, or you are going for a product that is common, do something thats going to "improve" whats been previously done. At least find something thats going to make your application stand out amongst the others.</p>
+							
+						</ul>
+						
+					</div>
+					
 				</div>
-			
-				<div>
-					<ul>
-						<li>What are some of the ways that you could change your HTML on your Demo app to be more accessible?</li>
-						<br>
-						<li>As I started writing this, I briefly looked over my app, and realized the answer to this question was pretty much blatant: just about everything. I immediately noted that I really didnt properly section off parts of my main page. While I used header tags to separate things, I could actually section off the header tags and their following items. I originally had javascript hidden/click to show menus, but now I am a bit glad I worked around that instead.</li>
-					</ul>
-				    
-					<br><br>
-					
-					<ul>
-						<li>Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?</li>
-						<br>
-						<li>The most common issues I am seeing amongst videos talking about these screen readers is misused tags, linked words in the middle of paragraphs, really long link URIs, and javascript causing issues with web accessibility. URIs are something that should at least be pretty simple to do. 
-						<br>
-						Shorting a URI will make surfing easier and quicker for accessibilty users, and is something I usually do whenever I can on my own pages anyways. 
-						<br>
-						Navigation bars are a big thing, too. While javascript and fancy navbars look nice, a clearly visible and simple navbar does the trick just as well. A small, simple navbar at the top of a page would allow for most readers to pick up on the links immediately. These links can be used at the top to simply get to places where needed, and if you want a large scripted CTI in the center for your visually-based users, well there ya go.</li>
-					
-					</ul>
-					
-					<br><br>
-					
-					<ul>
-						<li>Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.</li>
-						<br>
-						<li>iPhone/iPad/iOS devices - This should be a given, but I'll go with it anyways since the average person who never has need for these features may or may not notice they are available! I assist users with accibility issues all the time at my office, and one of the things we do for those users is enable it if they want to use it, as well as giving them a walkthrough of the features available. Major things of note is that you can actually change the devices' touch and tracking speeds/sensitivty and even create custom gestures for those that have issues with difficulty using/touching the screen. For visual impaired you can use larger texts, pretty decent voice overs and auto-text/auto-correct via voice.</li>
-						<br>
-						<li>Kindle - This is another nice example. The Amazon Kindle actually has visually impaired accessibility functions. You can have the device display larger fonts so that it makes reading easier, or even have the device read out text to speech.</li>
-					</ul>
-					
-					<br><br>
-					
-					<ul>
-						<li>Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.</li>
-						<br>
-						<li>Color ID - This is an app that uses a device's camera to tell what the color of something is. To more advanced users, it can also give out hex color tags, or even goes "simple" mode to find the basic colors.</li>
-						<br>
-						<li>SayText - This app is used to read the text of whatever the device's camera sees. The user holds the camera to the image, and presses the screen, and the device will focus and read off whatever text it sees.</li>
-					</ul>
-					
-					<br>
+				
+				<div class="blankspace homelong">
 					
 				</div>
 				
 			</div>
-			
-			<div class="blankspace homelong">
-				
-			</div>
-			
 		</div>
 		
 		<!-- Footer -->
@@ -167,7 +235,7 @@ AVF 1211
 				<!-- Jump -->
 				<div class="sixteen columns">
 					<div id="footer-bottom">
-						<div id="scroll-top-top"><a href="#"></a></div>
+						<div id="scrollup"><a href="#"></a></div>
 					</div>
 				</div>
 				
