@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <!--
 Alex Behannon
@@ -12,23 +12,27 @@ AVF 1211
 	<head>
 		
 		<meta charset="utf-8">
-		<title>AVF App - Home</title>
+		<title>AVF App - Google API Test</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/googlemap.css">
+		
 		
 		<!-- Scripts -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 		<script src="js/main.js"></script>
 		<script src="js/selectnav.js"></script>
 		<script src="js/cordova-2.1.0.js"></script>
+		<script src="js/googlemap.js"></script>
 		
 	</head>
 	
 	<body>
-
+		<!-- Nav -->
 		<div id="mainbox">
 			
 			<div class="container ie-dropdown-fix">
@@ -63,34 +67,17 @@ AVF 1211
 					
 				</div>
 				
-			</div>
-			
-			
+			</div>	
 			
 			<!-- Content -->
 			<div class="container">
-				
-				<div class="one-half column">
-					<div>
-						<a href="native.html" class="button color medium">Native Tests</a>
-						<p>A page that contains links for various tests featuring native mobile device calls.</p>
-					</div>
-				</div>
-				
-				<div class="one-half column">
-					<div>
-						<a href="api.html" class="button color medium">API Tests</a>
-						<p>A page that contains links for testing various API calls.</p>
-					</div>
-				</div>
-				
-				<div class="blankspace homelong">
 					
 				</div>
 				
 			</div>
-			
-			</div>
+		</div>
+		
+		<div id="map_canvas"></div>
 		
 		<!-- Footer -->
 		<div id="footer">
@@ -100,7 +87,6 @@ AVF 1211
 				<!-- Jump -->
 				<div class="sixteen columns">
 					<div id="footer-bottom">
-						
 						<div id="scrollup"><a href="#"></a></div>
 					</div>
 				</div>
@@ -108,8 +94,6 @@ AVF 1211
 			</div>
 			
 		</div>
-		
-
 		
 	</body>
 	
