@@ -211,6 +211,13 @@ input[type="button"] {
 		padding: 15px 0 0 0;
 		width: 100% !important;
 	}
+
+	.blankspace.home {
+		min-height: 250px;
+	}
+	.blankspace.homelong {
+		min-height: 450px;
+	}
 	
 }
 	
